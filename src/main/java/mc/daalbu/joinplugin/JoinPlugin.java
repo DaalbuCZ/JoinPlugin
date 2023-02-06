@@ -4,14 +4,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class JoinPlugin extends JavaPlugin {
 
+    private static JoinPlugin instance;
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        instance = this;
+        this.getCommand("heal").setExecutor(new HealCommand());
 
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
+    }
+
+    public static JoinPlugin getInstance() {
+        return instance;
     }
 }

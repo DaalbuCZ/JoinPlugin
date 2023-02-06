@@ -5,3 +5,7 @@ api-version: 1.19
 authors: [ Daalbu ]
 description: Simple plugin that provides custom join messages and /heal command
 website: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+commands:
+  heal:
+    description: Heals player
