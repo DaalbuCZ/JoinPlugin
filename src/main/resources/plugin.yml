@@ -1,0 +1,7 @@
+name: JoinPlugin
+version: 1.0
+main: mc.daalbu.joinplugin.JoinPlugin
+api-version: 1.19
+authors: [ Daalbu ]
+description: Simple plugin that provides custom join messages and /heal command
+website: https://www.youtube.com/watch?v=dQw4w9WgXcQ
