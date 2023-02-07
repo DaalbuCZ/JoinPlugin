@@ -9,6 +9,7 @@ public final class JoinPlugin extends JavaPlugin {
     public void onEnable() {
         instance = this;
         this.getCommand("heal").setExecutor(new HealCommand());
+        this.getServer().getPluginManager().registerEvents(new JoinListener(), instance);
 
     }
 
